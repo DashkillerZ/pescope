@@ -8,10 +8,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
         slides[currentSlide].classList.add("active");
         slides[previousSlide].classList.remove("active");
+        slides[previousSlide].classList.add("previous");
+        slides[nextSlide].classList.add("next");
+
+        setTimeout(function() {
+            slides[previousSlide].classList.remove("previous");
+            slides[nextSlide].classList.remove("next");
+        }, 1000);
 
         currentSlide = nextSlide;
     }
 
     showSlide();
-    setInterval(showSlide, 5000); // Change slide every 5 seconds
+    setInterval(showSlide, 10000); // Change slide every 5 seconds
 });
