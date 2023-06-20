@@ -236,27 +236,27 @@
     cursor: pointer;
 }
 #slide1{
-    background:url("./static/img1.jpg");
+    background:url("./slider/img1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 #slide2{
-    background:url("./static/img2.jpg");
+    background:url("./slider/img2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 #slide3{
-    background:url("./static/img3.jpg");
+    background:url("./slider/img3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 #slide4{
-    background:url("./static/img4.jpg");
+    background:url("./slider/img4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 #slide5{
-    background:url("./static/img5.jpg");
+    background:url("./slider/img5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
