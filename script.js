@@ -11,12 +11,12 @@ document.addEventListener("DOMContentLoaded", function() {
         slides[previousSlide].classList.add("previous");
         slides[nextSlide].classList.add("next");
 
-        setTimeout(function() {
+        let interval = setTimeout(function() {
             slides[previousSlide].classList.remove("previous");
             slides[nextSlide].classList.remove("next");
         }, 1000);
-
         currentSlide = nextSlide;
+        return () => clearInterval(interval);
     }
 
     showSlide();
